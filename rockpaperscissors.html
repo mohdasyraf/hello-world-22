@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Rock Paper Scissors</title>
+</head>
+<body>
+
+<h1> A Rock Paper Scissors Game </h1>
+
+<button onclick="buttonPressed(0)">Rock</button>
+<button onclick="buttonPressed(1)">Paper</button>
+<button onclick="buttonPressed(2)">Scissors</button>
+
+<h2> Your Score</h2>
+<script type="text/javascript">
+	var weapon = ["Rock", "Paper" , "Scissors" ]
+	var userScore = 0;
+	var computerScore = 0;
+
+	function buttonPressed(choice){
+	var computerChoice = Math.floor(Math.random()*3);
+
+	if(choice == 0){
+		if (computerChoice == 0){
+			alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". Its a draw . Computer " + computerScore+" user : "+userScore);
+	}
+	
+	else if (computerChoice == 1){
+		computerScore++;
+		alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". You lose . Computer " + computerScore+" user : "+userScore)
+	}
+	else {
+		userScore++;
+		alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". You Win. Computer " + computerScore+" user : "+userScore)
+
+		}
+	}
+	if(choice == 1){
+		if (computerChoice == 0){
+			alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". Its a draw . Computer " + computerScore+" user : "+userScore);
+	}
+	
+	else if (computerChoice == 1){
+		computerScore++;
+		alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". You lose . Computer " + computerScore+" user : "+userScore)
+	}
+	else {
+		userScore++;
+		alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". You Win. Computer " + computerScore+" user : "+userScore)
+
+	}
+}
+	if(choice == 2){
+		if (computerChoice == 0){
+			alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". Its a draw . Computer " + computerScore+" user : "+userScore);
+	}
+	
+	else if (computerChoice == 1){
+		computerScore++;
+		alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". You lose . Computer " + computerScore+" user : "+userScore)
+	}
+	else {
+		userScore++;
+		alert(" You select " + weapon[choice]+ ". Computer select " +weapon[computerChoice] + ". You Win. Computer " + computerScore+" user : "+userScore)
+	}
+	}
+}
+</script>
+</body>
+</html>
